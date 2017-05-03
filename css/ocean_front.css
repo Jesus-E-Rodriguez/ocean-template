@@ -1,0 +1,556 @@
+/*
+--------------------------------------------------------------------------------
+	Start defaults
+--------------------------------------------------------------------------------
+*/
+/*
+======================
+	Defaults
+======================
+*/
+* {
+	padding: 0;
+	margin: 0;
+	outline: 0;
+	text-decoration: none;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	letter-spacing: 1.5px;
+	line-height: 1.5;
+	color: #555;
+}
+header h1, header h2 {
+	position: relative;
+     color: white;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+header h1 {
+	font-weight: 800;
+	letter-spacing: 1.6px;
+	font-size: 9.5em;
+	text-transform: uppercase;
+}
+h1 a {
+	text-transform: none;
+	font-weight: 400;
+	text-shadow: none;
+	font-size: 1.3em;
+	color: #04A980;
+	letter-spacing: 2px;
+}
+h1 a:hover {
+	color: #67BA8F;
+}
+.email-link {
+	padding: 2% 0%;
+}
+h1 {
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+	font-weight: 600;
+	font-size: 3.5;
+	text-transform: uppercase;
+}
+h2.section-title {
+	color: #03A67E;
+	text-align: center;
+	margin-bottom: 50px;
+	position: relative;
+	font-weight: 600;
+	line-height: normal;
+	padding-bottom: 10px;
+}
+h2 {
+	color: #03A67E;
+	text-align: center;
+	font-weight: 600;
+	line-height: normal;
+	padding-bottom: 10px;
+}
+h3 {
+	color: #058F7F;
+	font-size: 1em;
+	padding-bottom: 10px;
+}
+/*
+--------------------------------------------------------------------------------
+	Start navigation
+--------------------------------------------------------------------------------
+*/
+/*
+======================
+	Navgigation
+======================
+*/
+.nav-container {
+	position: relative;
+}
+.navbar-container {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 99;
+}
+.navbar {
+	margin-bottom: 0;
+	border-radius: 0;
+	padding: 0;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+	background-color: transparent;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #cecece;
+}
+.navbar-default .navbar-toggle:hover {
+	background: rgba(255, 255, 255, 0.5);
+	-webkit-transition: background 0.5s ease;
+	-moz-transition: background 0.5s ease;
+	-ms-transition: background 0.5s ease;
+	-o-transition: background 0.5s ease;
+	transition: background 0.5s ease;
+}
+.navbar-default, .navbar-toggle {
+	border: 0px;
+     background-color: transparent;
+}
+.navbar-default {
+	-webkit-font-smoothing: antialiased;
+	zoom: 1;
+	padding: 13px 32px;
+	font-weight: 600;
+	font-size: 17px;
+	color: #FFFFFF;
+	text-shadow: rgba(0, 0, 0, 0.5) 0 -1px 0;
+}
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+    color: white;
+    background-color: transparent;
+}
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-brand {
+	text-transform: uppercase;
+	color: white;
+}
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+    color: white;
+    background-color: transparent;
+}
+/*Centering Nav*/
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+.navbar .navbar-collapse {
+    text-align: center;
+}
+/*End of nav*/
+header {
+  position: relative;
+  height: 600px;
+  overflow: hidden;
+  z-index: 1;
+}
+#background-header {
+     background-image: url('../images/oceanfront.jpg');
+	background-size: cover;
+	position: absolute;
+     top: 0;
+     bottom: 0;
+     right: 0;
+     left: 0;
+	transform: skewY(-6deg);
+     transform-origin: top left;
+	z-index: -99;
+}
+.header-slanted {
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     right: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     transform: skewY(-6deg);
+     transform-origin: top left;
+	z-index: -1;
+	background: -webkit-linear-gradient(bottom, rgba(255,255, 255, 0.15), rgba(255,0,0,1)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom, rgba(255,255, 255, 0.15), rgba(3,166,126,1)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom, rgba(255,255, 255, 0.15), rgba(3,166,126,1)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom, rgba(255,255, 255, 0.15), rgba(3,166,126,1)); /* Standard syntax (must be last) */
+}
+.thin {
+	font-weight: 100;
+}
+.bold {
+	font-weight: 800;
+}
+/*
+--------------------------------------------------------------------------------
+	Start Button
+--------------------------------------------------------------------------------
+*/
+/*
+======================
+	Button
+======================
+*/
+a.btn-main, a.btn-outline {
+	text-decoration: none;
+}
+.header-content .btn-main {
+	color: #FFF;
+	margin-top: 1%;
+}
+.btn-main {
+	-webkit-font-smoothing: antialiased;
+	display: inline-block;
+	vertical-align: middle;
+	zoom: 1;
+	color: #FFF;
+	font-weight: 400;
+	transition: all 0.5s;
+}
+.btn-start {
+	border-radius: 5px;
+	padding: 13px 32px;
+	font-size: 17px;
+	border: 0px;
+	box-shadow: rgba(0, 0, 0, 0.3) 0 1px 2px, inset rgba(255, 255, 255, 0.50) 0px 1px 3px -1px;
+	background-color: #03A67E;
+}
+a.btn-outline {
+	background: rgba(0, 0, 0, 0.5);
+	border: 2px solid #FFF;
+	border-radius: 4px;
+	padding: 12px 31px;
+	font-size: 16px;
+	text-transform: none;
+	color: #fff;
+	text-transform: uppercase;
+}
+.header-content .btn-outline:hover, .header-content .btn-outline:active,
+.header-content .btn-outline:focus {
+	color: #FFF;
+	border-color: #FFF;
+	background-color: rgba(0, 0, 0, 0.15)
+}
+.btn-outline {
+	background: transparent;
+	border: 1px solid #ccced6;
+	border-radius: 3px;
+	box-shadow: none;
+	color: #858a8e;
+	font-size: 12px;
+	font-style: normal;
+	padding: 15px 27px;
+	text-transform: uppercase;
+	font-weight: 500;
+	width: auto;
+	-webkit-appearance: none;
+}
+.btn-outline:hover, .btn-outline:active, .btn-outline:focus {
+	color: #fff;
+	border-color: #fff;
+	background-color: transparent;
+}
+/*For vertical centering in the header*/
+.header-content.display-table, .display-table {
+	display: table;
+	position: relative;
+}
+.display-table-cell {
+	display: table-cell;
+	vertical-align: middle;
+	position: relative;
+}
+.header-content.display-table, .display-table, .display-table-cell {
+	width: 100%;
+	height: 100%;
+}
+/*
+--------------------------------------------------------------------------------
+	Start Slanted Section
+--------------------------------------------------------------------------------
+*/
+/*
+======================
+	Slanted section
+======================
+*/
+footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 2%;
+  background-image: url('../images/cave.jpg');
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  height: 100vh;
+  width: auto;
+  z-index: -300;
+  color: white;
+}
+.small-footer-text {
+     position: fixed;
+     bottom: 2%;
+     left: 0;
+     right: 0;
+     margin: 0 auto;
+}
+.footer-container {
+     position: relative;
+     z-index: -99;
+     height: 100vh;
+     width: auto;
+     background: rgba(3,166,126, 0.3); /* For browsers that do not support gradients */
+     background: -webkit-linear-gradient(bottom, rgba(3,166,126, 0.3), rgba(255,255, 255, 0.15)); /* For Safari 5.1 to 6.0 */
+     background: -o-linear-gradient(bottom, rgba(3,166,126, 0.3), rgba(255,255, 255, 0.15)); /* For Opera 11.1 to 12.0 */
+     background: -moz-linear-gradient(bottom, rgba(3,166,126, 0.3), rgba(255,255, 255, 0.15)); /* For Firefox 3.6 to 15 */
+     background-color: linear-gradient(to bottom, rgba(3,166,126, 0.3), rgba(255,255, 255, 0.15)); /* Standard syntax (must be last) */
+     pointer-events: none;
+}
+footer h3 {
+     font-size: 1.5em;
+     font-weight: 600;
+     color: #fff;
+}
+footer small {
+	color: #fff;
+     font-weight: 600;
+     padding-bottom: 15px;
+}
+footer a, footer a:hover {
+	text-decoration: none;
+	color:#fff;
+}
+.social-links {
+	padding: 0;
+}
+.social-links li {
+	display: inline-block;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	background-color: rgba(0, 0, 0, 0.5);
+	margin: 1px;
+	border-radius: 5px;
+}
+.social-links li a {
+	color: #fff;
+	line-height: 30px;
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+}
+.wrapper {
+     background: #fff;
+     position: relative;
+     z-index: 1;
+}
+.section {
+	margin: 5% auto;
+	padding: 2% 0;
+	position: relative;
+}
+.section.contact {
+     padding-top: 8%;
+     margin: 5% auto 0% auto;
+     overflow: hidden;
+}
+.slanted-container {
+	position: relative;
+	overflow: hidden;
+	margin: 2% auto;
+     padding: 8% 0 8% 0;
+}
+.services-container {
+	margin: 5% auto 0% auto;
+}
+.alt-slanted-container {
+	position: relative;
+	overflow: visible;
+	margin: 0 auto;
+	padding: 8% 0 8% 0;
+	font-weight: 600;
+	z-index: 2;
+}
+.alt-slanted-container h2 {
+	padding-top: 8.5%;
+}
+.padding-top {
+	padding-top: 8.5%;
+}
+.slanted-section-1 {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform: skewY(-6deg);
+	transform-origin: top right;
+	z-index: -1;
+	background: rgba(255,255,255, 0.15); /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(bottom, rgba(255,255, 255, 0.15), rgba(255,0,0,1)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom, rgba(255,255, 255, 0.15), rgba(3,166,126,1)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom, rgba(255,255, 255, 0.15), rgba(3,166,126,1)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom, rgba(255,255, 255, 0.15), rgba(3,166,126,1)); /* Standard syntax (must be last) */
+}
+.slanted-section-2 {
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     right: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     transform: skewY(6deg);
+     transform-origin: top left;
+	z-index: -1;
+}
+#background3 {
+	background-image: url('../images/wave.jpg');
+	background-position: center center;
+	background-size: cover;
+	position: absolute;
+     top: 0;
+     bottom: 0;
+     right: 0;
+     left: 0;
+	width: 100%;
+     height: 100%;
+	z-index: -99;
+	transform: skewY(6deg);
+     transform-origin: top left;
+}
+.alt-section {
+	position: relative;
+	overflow: visible;
+	color: white;
+	font-weight: 600;
+     padding: 8% 0 8% 0;
+	/*height: 500px;*/
+}
+#background2 {
+	background-image: url('../images/azul.jpg');
+	background-size: cover;
+	background-position: 50% 90%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	transform: skewY(-6deg);
+	transform-origin: top right;
+	z-index: -99;
+}
+/*
+--------------------------------------------------------------------------------
+	Start Icons
+--------------------------------------------------------------------------------
+*/
+/*
+======================
+	Icons
+======================
+*/
+.icon {
+	font-size: 26px;
+	text-align: center;
+	width: 70px;
+	height: 70px;
+	line-height: 70px;
+	margin: 0 auto 20px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	border: 1px solid #058F7F;
+	color: #058F7F;
+}
+/*
+--------------------------------------------------------------------------------
+	Start of media queries
+--------------------------------------------------------------------------------
+*/
+/*
+======================
+	Media queries
+======================
+*/
+@media screen and (max-width: 990px) {
+	.header-content.display-table {
+		display: table;
+		position: relative;
+	}
+	.call-out {
+		text-align: center;
+	}
+}
+@media screen and (max-width: 768px) {
+     header h1 {
+     	letter-spacing: 1px;
+     	font-size: 5.2em;
+     }
+     header h2 {
+        font-size: 1.5em;
+     }
+     h1 a {
+		font-size: 0.85em;
+		letter-spacing: 1.5px;
+     }
+     .navbar-default, .navbar-toggle {
+		border: 0px;
+		background: rgba(0, 0, 0, 0.5); /* For browsers that do not support gradients */
+		background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)); /* For Firefox 3.6 to 15 */
+		background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)); /* Standard syntax (must be last) */
+	}
+	.navbar-default .navbar-toggle .icon-bar {
+		background-color: white;
+	}
+	.navbar .navbar-nav {
+		display: inline-block;
+		float: none;
+		vertical-align: top;
+     }
+     .navbar .navbar-collapse {
+        text-align: center;
+     }
+}
+@media screen and (max-width: 520px) {
+     h1 a {
+          font-size: 0.60em;
+          letter-spacing: 1px;
+     }
+}
+@media screen and (max-width: 370px) {
+     body {
+          font-size: 14px;
+     }
+     header h1 {
+     	font-size: 4.9em;
+     }
+     h1 {
+          font-size: 1.8em;
+     }
+     header h2 {
+          font-size: 1.2em;
+     }
+}
+@media screen and (max-width: 320px) {
+     header h1 {
+     	letter-spacing: 1px;
+     	font-size: 3.5em;
+     }
+}
